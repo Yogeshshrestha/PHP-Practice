@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHP Practice</title>
+    <link media="all" rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <header id="header">
+                <div class="header__content">
+                    <div class="logo">
+                        <img src="images/logo.jpg" alt="Logo" />
+                    </div>
+                    <!-- <nav class="navigations">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blogs</a></li>
+              </ul>
+              <div class="side-menu__content">
+                <a href="#" class="menu-opener">
+                  <span class="fa fa-bars"></span>
+                </a>
+                <div class="side-menu">
+                  <div class="menu-closer">
+                    <a href="#" class="menu-opener">
+                      <span class="fa fa-bars"></span>
+                    </a>
+                  </div>
+                  <a href="#">Home</a>
+                  <a href="#">About</a>
+                  <a href="#">Blogs</a>
+                </div>
+              </div>
+            </nav> -->
+                    <nav class="navigations" id="mynav">
+                        <a style="visibility: none; opacity: 0" href="#"></a>
+                        <a href="#" class="active">Home</a>
+                        <a href="#">News</a>
+                        <a href="#">Contact</a>
+                        <a style="border: 1px solid transparent" href="javascript:void(0);" class="icon"
+                            onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </nav>
+                    <div class="search">
+                        <a href="#" class="fa fa-search" onclick="openSearch()" onclick="closeSearch" accesskey="s"></a>
+                        <a onclick="openSearch()" onclick="closeSearch"href="#">Search</a>
+                        <div class="search-opener" id="mySearch">
+                            <form class="search-bar" action="#" method="" style="margin:auto;max-width:700px">
+                                <input type="search" placeholder="Search.." name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                                <button type="submit" class="times" onclick="closeSearch()"><i class="fa fa-times"></i></button>
+                            </form>
+                        </div> 
+                    </div>
+                </div>
+            </header>
+
+            <main id="main">
+                <div class="container">
+                    <section class="section__allbum">
+                        <h2>Grid Gallery</h2>
+
+                        <div class="bedroom__grid__gallary">
+                            <a class="gallary__item" href="#"><img src="images/img01.png" alt="image description" /></a>
+                            <a class="gallary__item" href="#"><img src="images/img02.png" alt="image description" /></a>
+                            <a class="gallary__item" href="#"><img src="images/img03.png"
+                                    alt="image description" /><span>+3</span></a>
+                        </div>
+                    </section>
+
+                    <section class="section__form">
+                        <form action="#" class="register__form" method="POST" autocomplete="off" novalidate>
+                            <strong class="title">Name</strong>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="form-group has-error">
+                                        <label for="firstName" class="sr-only">First name</label>
+                                        <input id="firstName" type="text" name="first_name" placeholder="First Name"
+                                            required />
+                                        <span class="error-message">First name is required</span>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="middleName" class="sr-only">Middle Name</label>
+                                        <input id="middleName" type="text" name="middle_name"
+                                            placeholder="Middle Name" />
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group has-error">
+                                        <label for="lastName" class="sr-only">Last Name</label>
+                                        <input id="lastName" type="text" name="last_name" placeholder="Last Name"
+                                            required />
+                                        <span class="error-message">last name is required</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="form-group has-error">
+                                        <label for="DateBirth">Date of Birth</label>
+                                        <input id="dateBirth" type="date" min="2022-01-31" max="2022-02-28" required />
+                                        <span class="error-message">Date of Birth is required</span>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                <div class="button__register">
+                    <button type="button" class="btn">Register</button>
+                </div>
+                </form>
+                </section>
+                <section>
+                    <div class="row">
+                        <div class="leftcolumn">
+                            <div class="card">
+                                <h2>Blog</h2>
+                                <h3>Blog description</h3>
+                                <div class="fakeimg" style="height:200px;">Image</div>
+                                <p>Lorem..</p>
+                                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+                                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco.</p>
+                            </div>
+                        </div>
+                        <div class="rightcolumn">
+                            <div class="card">
+                                <h2>About Me</h2>
+                                <div class="fakeimg" style="height:100px;">Image</div>
+                                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section__table">
+                    <table>
+                        <tr>
+                          <td>
+                            <div class="section">
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <td style="min-width: 90px;">
+                                      <table>
+                                        <tr>
+                                          <td>
+                                            <div>
+                                              <img style="width: 200px; margin-right:20px;" src="images/logo.jpg" alt="LOGO" />
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                    <td style="text-align: left; width: 100%">
+                                      <table>
+                                        <tr>
+                                          <td>
+                                            <th>
+                                              <strong class="heading">Welcome!</strong>
+                                            </th>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                      <table>
+                                        <tr>
+                                          <td>
+                                            <th>
+                                              <strong class="sub-heading">You are now Registered!</strong>
+                                            </th>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="section">
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <table>
+                                        <tr>
+                                          <th>
+                                            <strong class="sub-heading">Hi! Yogesh Shrestha</strong>
+                                          <th>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                      <table>
+                                        <tr>
+                                          <td>
+                                            <p style="text-align: center;">
+                                              You have successfully Selection As one of THEMEGRIL members.
+                                            </p>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="section">
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <table>
+                                        <tr>
+                                          <td>
+                                            <th>
+                                              <strong class="sub-heading">Ready to Work as PHP intern?</strong>
+                                            </th>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                      <table>
+                                        <tr>
+                                          <td>
+                                            <p style="text-align: center;">Here, you can learn about Introduction to company and WordPress and <a class="link" href="#">more</a>. And You can learn about Us on <a class="link" href="#">Here</a>.</p>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>  
+                          </td>
+                        </tr>
+                      </table>
+                </section>
+                <div class="pagination">
+                    <nav class="pagination-default	">
+                        <ul>
+                            <li><a class="previous" href="#">&laquo;</a></li>
+                            <li class="active"><strong>1</strong></li>
+                            <li><a href="#">2</a></li>
+                            <li><a class="disabled" href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>	
+                            <li><a class="next" href="#">&raquo;</a></li>
+                        </ul>
+                    </nav>	
+                </div>
+        </div>
+        </main>
+
+        <footer id="footer"></footer>
+    </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

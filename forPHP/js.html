@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHP Practice</title>
+    <link media="all" rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div class="container">
+        <header id="header">
+          <div class="header__content">
+            <div class="logo">
+              <img src="images/logo.jpg" alt="Logo" />
+            </div>
+            <!-- <nav class="navigations">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blogs</a></li>
+              </ul>
+              <div class="side-menu__content">
+                <a href="#" class="menu-opener">
+                  <span class="fa fa-bars"></span>
+                </a>
+                <div class="side-menu">
+                  <div class="menu-closer">
+                    <a href="#" class="menu-opener">
+                      <span class="fa fa-bars"></span>
+                    </a>
+                  </div>
+                  <a href="#">Home</a>
+                  <a href="#">About</a>
+                  <a href="#">Blogs</a>
+                </div>
+              </div>
+            </nav> -->
+            <nav class="navigations" id="mynav">
+              <a style="visibility: none; opacity: 0" href="#"></a>
+              <a href="#" class="active">Home</a>
+              <a href="#">News</a>
+              <a href="#">Contact</a>
+              <a
+                style="border: 1px solid transparent"
+                href="javascript:void(0);"
+                class="icon"
+                onclick="myFunction()"
+              >
+                <i class="fa fa-bars"></i>
+              </a>
+            </nav>
+            <div class="search">
+              <a
+                href="#"
+                class="fa fa-search"
+                onclick="openSearch()"
+                onclick="closeSearch"
+                accesskey="s"
+              ></a>
+              <a onclick="openSearch()" onclick="closeSearch" href="#"
+                >Search</a
+              >
+              <div class="search-opener" id="mySearch">
+                <form
+                  class="search-bar"
+                  action="#"
+                  method=""
+                  style="margin: auto; max-width: 700px"
+                >
+                  <input type="search" placeholder="Search.." name="search" />
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                  <button type="submit" class="times" onclick="closeSearch()">
+                    <i class="fa fa-times"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <main id="main">
+          <button
+            type="button"
+            onclick="document.write(myArray.push(newArray))"
+          >
+            push new array
+          </button>
+
+          <h2>JavaScript Objects</h2>
+          <p>
+            An object method is a function definition, stored as a property
+            value.
+          </p>
+
+          <p id="demo"></p>
+
+          <div class="loop">
+            <label for="goal">Goal</label>
+            <input type="text" id="goal" />
+            <button>Add Goal</button>
+          </div>
+          <ul></ul>
+          <h2>JavaScript Debugger</h2>
+
+          <p id="debug"></p>
+
+          <p>
+            With the debugger turned on, the code below should stop executing
+            before it executes the third line.
+          </p>
+          <p id="demo1"></p>
+
+          <p id="demo2"></p>
+
+          <p>A GLOBAL variable can be accessed from any script or function.</p>
+
+          <p id="global"></p>
+
+          <div id="ajj">
+            <h2>The XMLHttpRequest Object</h2>
+            <button type="button" onclick="loadDoc()">Change Content</button>
+          </div>
+
+          <p id="master">i love javascript</p>
+        </main>
+        <footer id="footer"></footer>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
